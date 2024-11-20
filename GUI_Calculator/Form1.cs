@@ -32,12 +32,26 @@ namespace GUI_Calculator
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "6";
+            }
+            else
+            {
+                txtDisplay.Text += "6";
+            }
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "9";
+            }
+            else
+            {
+                txtDisplay.Text += "9";
+            }
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -77,12 +91,26 @@ namespace GUI_Calculator
 
         private void btnSeven_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "7";
+            }
+            else
+            {
+                txtDisplay.Text += "7";
+            }
         }
 
         private void btnEight_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "8";
+            }
+            else
+            {
+                txtDisplay.Text += "8";
+            }
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
@@ -97,27 +125,62 @@ namespace GUI_Calculator
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "5";
+            }
+            else
+            {
+                txtDisplay.Text += "5";
+            }
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "4";
+            }
+            else
+            {
+                txtDisplay.Text += "4";
+            }
         }
 
         private void btnOne_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "1";
+            }
+            else
+            {
+                txtDisplay.Text += "1";
+            }
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "2";
+            }
+            else
+            {
+                txtDisplay.Text += "2";
+            }
         }
 
         private void btnThree_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "3";
+            }
+            else
+            {
+                txtDisplay.Text += "3";
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
