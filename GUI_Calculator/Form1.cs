@@ -70,7 +70,9 @@ namespace GUI_Calculator
 
         private void btnSquare_Click(object sender, EventArgs e)
         {
-
+            firstNum = double.Parse(txtDisplay.Text);
+            oper = "^";
+            txtDisplay.Text = "";
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
@@ -255,18 +257,27 @@ namespace GUI_Calculator
                 case "+":
                     txtDisplay.Text = (firstNum + secondNum).ToString();
                     break;
+
                 case "-":
                     txtDisplay.Text = (firstNum - secondNum).ToString();
                     break;
+
                 case "*":
                     txtDisplay.Text = (firstNum * secondNum).ToString();
                     break;
+
                 case "/":
                     txtDisplay.Text = (firstNum / secondNum).ToString();
                     break;
+
                 case "%":
                     txtDisplay.Text = (firstNum / 100 * secondNum).ToString();
                     break;
+
+                case "^":
+                    txtDisplay.Text = (firstNum * firstNum).ToString();
+                    break;
+
                 default:
                     break;
             }
