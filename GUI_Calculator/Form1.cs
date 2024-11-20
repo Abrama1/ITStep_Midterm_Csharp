@@ -100,7 +100,8 @@ namespace GUI_Calculator
 
         private void btnOverone_Click(object sender, EventArgs e)
         {
-
+            firstNum = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = (1 / firstNum).ToString();
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
