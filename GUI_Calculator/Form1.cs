@@ -195,7 +195,14 @@ namespace GUI_Calculator
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "0";
+            }
+            else
+            {
+                txtDisplay.Text += "0";
+            }
         }
 
         private void btnDot_Click(object sender, EventArgs e)
