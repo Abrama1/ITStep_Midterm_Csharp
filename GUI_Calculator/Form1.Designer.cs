@@ -49,7 +49,7 @@
             this.btnSquare = new System.Windows.Forms.Button();
             this.btnPercent = new System.Windows.Forms.Button();
             this.btnSqrt = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
+            this.buttonCE = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
             this.btnCE = new System.Windows.Forms.Button();
             this.btnBackspace = new System.Windows.Forms.Button();
@@ -59,6 +59,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Location = new System.Drawing.Point(2, 32);
             this.textBox1.Multiline = true;
@@ -84,6 +85,7 @@
             this.btnPlusMinus.TabIndex = 1;
             this.btnPlusMinus.Text = "±";
             this.btnPlusMinus.UseVisualStyleBackColor = false;
+            this.btnPlusMinus.Click += new System.EventHandler(this.btnPlusMinus_Click);
             // 
             // btnZero
             // 
@@ -102,6 +104,7 @@
             this.btnZero.TabIndex = 1;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
+            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
             // btnDot
             // 
@@ -120,12 +123,16 @@
             this.btnDot.TabIndex = 1;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = false;
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnEquals
             // 
             this.btnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
             this.btnEquals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEquals.FlatAppearance.BorderSize = 0;
+            this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnEquals.FlatAppearance.BorderSize = 2;
+            this.btnEquals.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnEquals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEquals.ForeColor = System.Drawing.SystemColors.Menu;
             this.btnEquals.Location = new System.Drawing.Point(227, 361);
@@ -134,6 +141,7 @@
             this.btnEquals.TabIndex = 1;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = false;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnOne
             // 
@@ -152,6 +160,7 @@
             this.btnOne.TabIndex = 1;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = false;
+            this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
             // btnTwo
             // 
@@ -170,6 +179,7 @@
             this.btnTwo.TabIndex = 1;
             this.btnTwo.Text = "2";
             this.btnTwo.UseVisualStyleBackColor = false;
+            this.btnTwo.Click += new System.EventHandler(this.btnTwo_Click);
             // 
             // btnThree
             // 
@@ -188,6 +198,7 @@
             this.btnThree.TabIndex = 1;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = false;
+            this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
             // btnAdd
             // 
@@ -204,6 +215,7 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnFour
             // 
@@ -222,6 +234,7 @@
             this.btnFour.TabIndex = 1;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = false;
+            this.btnFour.Click += new System.EventHandler(this.btnFour_Click);
             // 
             // btnFive
             // 
@@ -240,6 +253,7 @@
             this.btnFive.TabIndex = 1;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = false;
+            this.btnFive.Click += new System.EventHandler(this.btnFive_Click);
             // 
             // btnSeven
             // 
@@ -258,6 +272,7 @@
             this.btnSeven.TabIndex = 1;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = false;
+            this.btnSeven.Click += new System.EventHandler(this.btnSeven_Click);
             // 
             // btnSix
             // 
@@ -295,6 +310,7 @@
             this.btnEight.TabIndex = 1;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = false;
+            this.btnEight.Click += new System.EventHandler(this.btnEight_Click);
             // 
             // btnSub
             // 
@@ -311,6 +327,7 @@
             this.btnSub.TabIndex = 1;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = false;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
             // btnNine
             // 
@@ -346,6 +363,7 @@
             this.btnMultiply.TabIndex = 1;
             this.btnMultiply.Text = "×";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnOverone
             // 
@@ -362,6 +380,7 @@
             this.btnOverone.TabIndex = 1;
             this.btnOverone.Text = "1 / x";
             this.btnOverone.UseVisualStyleBackColor = false;
+            this.btnOverone.Click += new System.EventHandler(this.btnOverone_Click);
             // 
             // btnSquare
             // 
@@ -395,6 +414,7 @@
             this.btnPercent.TabIndex = 1;
             this.btnPercent.Text = "%";
             this.btnPercent.UseVisualStyleBackColor = false;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
             // 
             // btnSqrt
             // 
@@ -413,21 +433,22 @@
             this.btnSqrt.UseVisualStyleBackColor = false;
             this.btnSqrt.Click += new System.EventHandler(this.button20_Click);
             // 
-            // button21
+            // buttonCE
             // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button21.Location = new System.Drawing.Point(77, 116);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 48);
-            this.button21.TabIndex = 1;
-            this.button21.Text = "CE";
-            this.button21.UseVisualStyleBackColor = false;
+            this.buttonCE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonCE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonCE.FlatAppearance.BorderSize = 0;
+            this.buttonCE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.buttonCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.buttonCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCE.ForeColor = System.Drawing.SystemColors.Menu;
+            this.buttonCE.Location = new System.Drawing.Point(77, 116);
+            this.buttonCE.Name = "buttonCE";
+            this.buttonCE.Size = new System.Drawing.Size(75, 48);
+            this.buttonCE.TabIndex = 1;
+            this.buttonCE.Text = "CE";
+            this.buttonCE.UseVisualStyleBackColor = false;
+            this.buttonCE.Click += new System.EventHandler(this.button21_Click);
             // 
             // btnDivision
             // 
@@ -444,6 +465,7 @@
             this.btnDivision.TabIndex = 1;
             this.btnDivision.Text = "÷";
             this.btnDivision.UseVisualStyleBackColor = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // btnCE
             // 
@@ -460,6 +482,7 @@
             this.btnCE.TabIndex = 1;
             this.btnCE.Text = "C";
             this.btnCE.UseVisualStyleBackColor = false;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnBackspace
             // 
@@ -492,7 +515,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnSub);
-            this.Controls.Add(this.button21);
+            this.Controls.Add(this.buttonCE);
             this.Controls.Add(this.btnThree);
             this.Controls.Add(this.btnEight);
             this.Controls.Add(this.btnSqrt);
@@ -540,7 +563,7 @@
         private System.Windows.Forms.Button btnSquare;
         private System.Windows.Forms.Button btnPercent;
         private System.Windows.Forms.Button btnSqrt;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button buttonCE;
         private System.Windows.Forms.Button btnDivision;
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnBackspace;
