@@ -78,7 +78,7 @@ namespace GUI_Calculator
         private void btnPercent_Click(object sender, EventArgs e)
         {
             firstNum = double.Parse(txtDisplay.Text);
-            oper = "/";
+            oper = "%";
             txtDisplay.Text = "";
         }
 
