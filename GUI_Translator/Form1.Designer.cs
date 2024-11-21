@@ -33,7 +33,7 @@
             this.cmbBoxList1 = new System.Windows.Forms.ComboBox();
             this.cmbBoxList2 = new System.Windows.Forms.ComboBox();
             this.btnTransate = new System.Windows.Forms.Button();
-            this.btnShuffle = new System.Windows.Forms.Button();
+            this.btnSwitch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDisplay1
@@ -91,11 +91,12 @@
             // btnTransate
             // 
             this.btnTransate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTransate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTransate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnTransate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransate.ForeColor = System.Drawing.SystemColors.Menu;
-            this.btnTransate.Location = new System.Drawing.Point(370, 279);
+            this.btnTransate.Location = new System.Drawing.Point(369, 280);
             this.btnTransate.Name = "btnTransate";
             this.btnTransate.Size = new System.Drawing.Size(100, 40);
             this.btnTransate.TabIndex = 2;
@@ -103,21 +104,18 @@
             this.btnTransate.UseVisualStyleBackColor = false;
             this.btnTransate.Click += new System.EventHandler(this.btnTransate_Click);
             // 
-            // btnShuffle
+            // btnSwitch
             // 
-            this.btnShuffle.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnShuffle.BackColor = System.Drawing.Color.Transparent;
-            this.btnShuffle.BackgroundImage = global::GUI_Translator.Properties.Resources.shuffle3;
-            this.btnShuffle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnShuffle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShuffle.Location = new System.Drawing.Point(382, 205);
-            this.btnShuffle.Name = "btnShuffle";
-            this.btnShuffle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.btnShuffle.Size = new System.Drawing.Size(75, 32);
-            this.btnShuffle.TabIndex = 3;
-            this.btnShuffle.UseVisualStyleBackColor = false;
-            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
+            this.btnSwitch.BackgroundImage = global::GUI_Translator.Properties.Resources.intersect;
+            this.btnSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSwitch.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSwitch.Location = new System.Drawing.Point(393, 205);
+            this.btnSwitch.Name = "btnSwitch";
+            this.btnSwitch.Size = new System.Drawing.Size(50, 24);
+            this.btnSwitch.TabIndex = 3;
+            this.btnSwitch.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -125,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(834, 361);
-            this.Controls.Add(this.btnShuffle);
+            this.Controls.Add(this.btnSwitch);
             this.Controls.Add(this.btnTransate);
             this.Controls.Add(this.cmbBoxList2);
             this.Controls.Add(this.cmbBoxList1);
@@ -146,7 +144,7 @@
         private System.Windows.Forms.ComboBox cmbBoxList1;
         private System.Windows.Forms.ComboBox cmbBoxList2;
         private System.Windows.Forms.Button btnTransate;
-        private System.Windows.Forms.Button btnShuffle;
+        private System.Windows.Forms.Button btnSwitch;
     }
 }
 
