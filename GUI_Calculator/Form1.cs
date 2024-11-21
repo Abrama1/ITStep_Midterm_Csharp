@@ -218,7 +218,7 @@ namespace GUI_Calculator
         {
             firstNum = double.Parse(txtDisplay.Text);
             oper = "/";
-            txtDisplay.Text = "";
+            txtDisplay.Text = "";     
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
@@ -232,14 +232,14 @@ namespace GUI_Calculator
         {
             firstNum = double.Parse(txtDisplay.Text);
             oper = "-";
-            txtDisplay.Text = "";
+            txtDisplay.Text = "";         
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            firstNum = double.Parse(txtDisplay.Text);
-            oper = "+";
-            txtDisplay.Text = "";
+                firstNum = double.Parse(txtDisplay.Text);
+                oper = "+";
+                txtDisplay.Text = "";
         }
 
         private void btnPlusMinus_Click(object sender, EventArgs e)
@@ -284,6 +284,7 @@ namespace GUI_Calculator
 
                 default:
                     break;
+
             }
         }
     }
