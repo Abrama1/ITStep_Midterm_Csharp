@@ -12,6 +12,7 @@ namespace GUI_Translator
 {
     public partial class Form1 : Form
     {
+        string firstString, secondString;
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +29,16 @@ namespace GUI_Translator
         }
 
         private void btnTransate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShuffle_Click(object sender, EventArgs e)
         {
 
         }

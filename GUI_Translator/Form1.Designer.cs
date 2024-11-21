@@ -28,60 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtDisplay1 = new System.Windows.Forms.TextBox();
+            this.txtDisplay2 = new System.Windows.Forms.TextBox();
+            this.cmbBoxList1 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxList2 = new System.Windows.Forms.ComboBox();
             this.btnTransate = new System.Windows.Forms.Button();
             this.btnShuffle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtDisplay1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(40, 60);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 130);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtDisplay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.txtDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtDisplay1.Location = new System.Drawing.Point(40, 60);
+            this.txtDisplay1.Multiline = true;
+            this.txtDisplay1.Name = "txtDisplay1";
+            this.txtDisplay1.Size = new System.Drawing.Size(350, 130);
+            this.txtDisplay1.TabIndex = 0;
+            this.txtDisplay1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtDisplay2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(445, 60);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(350, 130);
-            this.textBox2.TabIndex = 0;
+            this.txtDisplay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.txtDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtDisplay2.Location = new System.Drawing.Point(445, 60);
+            this.txtDisplay2.Multiline = true;
+            this.txtDisplay2.Name = "txtDisplay2";
+            this.txtDisplay2.Size = new System.Drawing.Size(350, 130);
+            this.txtDisplay2.TabIndex = 0;
+            this.txtDisplay2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // comboBox1
+            // cmbBoxList1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 205);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 24);
-            this.comboBox1.Sorted = true;
-            this.comboBox1.TabIndex = 1;
+            this.cmbBoxList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cmbBoxList1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbBoxList1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBoxList1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.cmbBoxList1.FormattingEnabled = true;
+            this.cmbBoxList1.Location = new System.Drawing.Point(85, 205);
+            this.cmbBoxList1.Name = "cmbBoxList1";
+            this.cmbBoxList1.Size = new System.Drawing.Size(250, 24);
+            this.cmbBoxList1.Sorted = true;
+            this.cmbBoxList1.TabIndex = 1;
             // 
-            // comboBox2
+            // cmbBoxList2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.Menu;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(500, 205);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 24);
-            this.comboBox2.Sorted = true;
-            this.comboBox2.TabIndex = 1;
+            this.cmbBoxList2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cmbBoxList2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbBoxList2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBoxList2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.cmbBoxList2.FormattingEnabled = true;
+            this.cmbBoxList2.Location = new System.Drawing.Point(500, 205);
+            this.cmbBoxList2.Name = "cmbBoxList2";
+            this.cmbBoxList2.Size = new System.Drawing.Size(250, 24);
+            this.cmbBoxList2.Sorted = true;
+            this.cmbBoxList2.TabIndex = 1;
             // 
             // btnTransate
             // 
@@ -112,6 +117,7 @@
             this.btnShuffle.Size = new System.Drawing.Size(75, 32);
             this.btnShuffle.TabIndex = 3;
             this.btnShuffle.UseVisualStyleBackColor = false;
+            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
             // 
             // Form1
             // 
@@ -121,10 +127,10 @@
             this.ClientSize = new System.Drawing.Size(834, 361);
             this.Controls.Add(this.btnShuffle);
             this.Controls.Add(this.btnTransate);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbBoxList2);
+            this.Controls.Add(this.cmbBoxList1);
+            this.Controls.Add(this.txtDisplay2);
+            this.Controls.Add(this.txtDisplay1);
             this.Name = "Form1";
             this.Text = "Translator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -135,10 +141,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtDisplay1;
+        private System.Windows.Forms.TextBox txtDisplay2;
+        private System.Windows.Forms.ComboBox cmbBoxList1;
+        private System.Windows.Forms.ComboBox cmbBoxList2;
         private System.Windows.Forms.Button btnTransate;
         private System.Windows.Forms.Button btnShuffle;
     }
