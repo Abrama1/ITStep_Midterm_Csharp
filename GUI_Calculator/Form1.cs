@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace GUI_Calculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
         double firstNum, secondNum;
         string oper;
 
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }

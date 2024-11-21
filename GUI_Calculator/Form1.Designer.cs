@@ -1,6 +1,6 @@
 ﻿namespace GUI_Calculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -503,7 +503,7 @@
             this.btnBackspace.UseVisualStyleBackColor = false;
             this.btnBackspace.Click += new System.EventHandler(this.button24_Click);
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -534,7 +534,7 @@
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnPlusMinus);
             this.Controls.Add(this.txtDisplay);
-            this.Name = "Form1";
+            this.Name = "Calculator";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
