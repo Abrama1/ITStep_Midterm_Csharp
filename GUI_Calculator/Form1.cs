@@ -26,6 +26,78 @@ namespace GUI_Calculator
 
         }
 
+        private void btnZero_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "0";
+            }
+            else
+            {
+                txtDisplay.Text += "0";
+            }
+        }
+
+        private void btnOne_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "1";
+            }
+            else
+            {
+                txtDisplay.Text += "1";
+            }
+        }
+
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "2";
+            }
+            else
+            {
+                txtDisplay.Text += "2";
+            }
+        }
+
+        private void btnThree_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "3";
+            }
+            else
+            {
+                txtDisplay.Text += "3";
+            }
+        }
+
+        private void btnFour_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "4";
+            }
+            else
+            {
+                txtDisplay.Text += "4";
+            }
+        }
+
+        private void btnFive_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "5";
+            }
+            else
+            {
+                txtDisplay.Text += "5";
+            }
+        }
+
         private void button20_Click(object sender, EventArgs e)
         {
             firstNum = double.Parse(txtDisplay.Text);
@@ -44,6 +116,30 @@ namespace GUI_Calculator
             }
         }
 
+        private void btnSeven_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "7";
+            }
+            else
+            {
+                txtDisplay.Text += "7";
+            }
+        }
+
+        private void btnEight_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "8";
+            }
+            else
+            {
+                txtDisplay.Text += "8";
+            }
+        }
+
         private void button15_Click(object sender, EventArgs e)
         {
             if (txtDisplay.Text == "0")
@@ -53,6 +149,18 @@ namespace GUI_Calculator
             else
             {
                 txtDisplay.Text += "9";
+            }
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            if (btnDot.Text == ".")
+            {
+                if (!txtDisplay.Text.Contains("."))
+                {
+                    txtDisplay.Text = txtDisplay.Text + btnDot.Text;
+                }
+
             }
         }
 
@@ -113,30 +221,6 @@ namespace GUI_Calculator
             txtDisplay.Text = "";
         }
 
-        private void btnSeven_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "7";
-            }
-            else
-            {
-                txtDisplay.Text += "7";
-            }
-        }
-
-        private void btnEight_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "8";
-            }
-            else
-            {
-                txtDisplay.Text += "8";
-            }
-        }
-
         private void btnMultiply_Click(object sender, EventArgs e)
         {
             firstNum = double.Parse(txtDisplay.Text);
@@ -149,66 +233,6 @@ namespace GUI_Calculator
             firstNum = double.Parse(txtDisplay.Text);
             oper = "-";
             txtDisplay.Text = "";
-        }
-
-        private void btnFive_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "5";
-            }
-            else
-            {
-                txtDisplay.Text += "5";
-            }
-        }
-
-        private void btnFour_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "4";
-            }
-            else
-            {
-                txtDisplay.Text += "4";
-            }
-        }
-
-        private void btnOne_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "1";
-            }
-            else
-            {
-                txtDisplay.Text += "1";
-            }
-        }
-
-        private void btnTwo_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "2";
-            }
-            else
-            {
-                txtDisplay.Text += "2";
-            }
-        }
-
-        private void btnThree_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "3";
-            }
-            else
-            {
-                txtDisplay.Text += "3";
-            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -224,29 +248,7 @@ namespace GUI_Calculator
             txtDisplay.Text = Convert.ToString(-1 * q);
         }
 
-        private void btnZero_Click(object sender, EventArgs e)
-        {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "0";
-            }
-            else
-            {
-                txtDisplay.Text += "0";
-            }
-        }
 
-        private void btnDot_Click(object sender, EventArgs e)
-        {
-            if (btnDot.Text == ".")
-            {
-                if (!txtDisplay.Text.Contains("."))
-                {
-                    txtDisplay.Text = txtDisplay.Text + btnDot.Text;
-                }
-
-            }
-        }
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
