@@ -81,18 +81,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shuffle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shuffle1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shuffle2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shuffle3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\intersect.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
