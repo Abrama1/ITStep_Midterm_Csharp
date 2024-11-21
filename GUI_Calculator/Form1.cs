@@ -267,7 +267,14 @@ namespace GUI_Calculator
                     break;
 
                 case "/":
-                    txtDisplay.Text = (firstNum / secondNum).ToString();
+                    if (secondNum == 0)
+                    {
+                        txtDisplay.Text = "Cannot Divide By Zero";
+                    }
+                    else
+                    {
+                        txtDisplay.Text = (firstNum / secondNum).ToString();
+                    }
                     break;
 
                 case "%":
