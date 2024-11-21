@@ -98,12 +98,6 @@ namespace GUI_Calculator
             }
         }
 
-        private void button20_Click(object sender, EventArgs e)
-        {
-            firstNum = double.Parse(txtDisplay.Text);
-            txtDisplay.Text = (Math.Sqrt(firstNum)).ToString();
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
             if (txtDisplay.Text == "0")
@@ -183,6 +177,12 @@ namespace GUI_Calculator
             txtDisplay.Text = (firstNum * firstNum).ToString();
         }
 
+        private void button20_Click(object sender, EventArgs e)
+        {
+            firstNum = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = (Math.Sqrt(firstNum)).ToString();
+        }
+
         private void btnPercent_Click(object sender, EventArgs e)
         {
             firstNum = double.Parse(txtDisplay.Text);
@@ -247,7 +247,6 @@ namespace GUI_Calculator
             double q = Convert.ToDouble(txtDisplay.Text);
             txtDisplay.Text = Convert.ToString(-1 * q);
         }
-
 
 
         private void btnEquals_Click(object sender, EventArgs e)

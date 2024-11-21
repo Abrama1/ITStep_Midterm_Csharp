@@ -555,7 +555,6 @@
         private System.Windows.Forms.Button btnFour;
         private System.Windows.Forms.Button btnFive;
         private System.Windows.Forms.Button btnSeven;
-        private System.Windows.Forms.Button btnSix;
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.Button btnNine;
@@ -568,6 +567,7 @@
         private System.Windows.Forms.Button btnDivision;
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnBackspace;
+        private System.Windows.Forms.Button btnSix;
     }
 }
 
