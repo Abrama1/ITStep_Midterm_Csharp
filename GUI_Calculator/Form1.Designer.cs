@@ -537,7 +537,7 @@
             this.Controls.Add(this.btnPlusMinus);
             this.Controls.Add(this.txtDisplay);
             this.Name = "Calculator";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
