@@ -62,6 +62,12 @@ namespace GUI_Hangman
             {
                 UpdateHangmanImage();
             }
+
+            if (!lblWordDisplay.Text.Contains('_'))
+            {
+                MessageBox.Show("Congratulations! You've won");
+                Application.Restart();
+            }
         }
     }
 }
