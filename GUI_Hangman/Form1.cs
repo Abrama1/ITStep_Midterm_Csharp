@@ -37,6 +37,7 @@ namespace GUI_Hangman
         private void Form1_Load(object sender, EventArgs e)
         {
             incorrectGuess = 0;
+            UpdateHangmanImage();
             random = new Random();
             selectedWord = words[random.Next(words.Count)];
             displayWord = new string('_', selectedWord.Length).ToCharArray();
@@ -68,6 +69,34 @@ namespace GUI_Hangman
                 MessageBox.Show("Congratulations! You've won");
                 Application.Restart();
             }
+        }
+
+        private void UpdateHangmanImage()
+        {
+            switch (incorrectGuess)
+            {
+                case 0:
+                    pictureBox1.Image = Properties.Resources._1;
+                    break;
+                case 1:
+                    pictureBox1.Image = Properties.Resources._2;
+                    break;
+                case 2:
+                    pictureBox1.Image = Properties.Resources._4;
+                    break;
+                case 3:
+                    pictureBox1.Image = Properties.Resources._5;
+                    break;
+                case 4:
+                    pictureBox1.Image = Properties.Resources._6;
+                    MessageBox.Show($"You've lost! The word was {selectedWord}");
+                    Application.Restart();
+                    break;
+
+                default:
+                    break;
+            }
+            incorrectGuess++;
         }
     }
 }
