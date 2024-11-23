@@ -49,11 +49,11 @@
             // 
             // btnGuess
             // 
-            this.btnGuess.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnGuess.BackColor = System.Drawing.SystemColors.Control;
             this.btnGuess.Font = new System.Drawing.Font("Architect", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuess.Location = new System.Drawing.Point(12, 299);
+            this.btnGuess.Location = new System.Drawing.Point(41, 295);
             this.btnGuess.Name = "btnGuess";
-            this.btnGuess.Size = new System.Drawing.Size(130, 50);
+            this.btnGuess.Size = new System.Drawing.Size(130, 54);
             this.btnGuess.TabIndex = 1;
             this.btnGuess.Text = "Guess";
             this.btnGuess.UseVisualStyleBackColor = false;
@@ -61,9 +61,9 @@
             // 
             // tbGuess
             // 
-            this.tbGuess.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tbGuess.BackColor = System.Drawing.SystemColors.Control;
             this.tbGuess.Font = new System.Drawing.Font("Architect", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGuess.Location = new System.Drawing.Point(272, 299);
+            this.tbGuess.Location = new System.Drawing.Point(241, 295);
             this.tbGuess.Name = "tbGuess";
             this.tbGuess.Size = new System.Drawing.Size(100, 54);
             this.tbGuess.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbGuess);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,12 +14,19 @@ namespace GUI_Hangman
     public partial class Form1 : Form
     {
         #region Variables
+        // words for testing
+        /*
         List<string> words = new List<string>
         {
             "banana",
             "apple",
             "orange"
-        };
+        };*/
+
+        // Read all words from the file into a list
+        List<string> words = new List<string>(File.ReadAllLines("../../Resources/hangman_words.txt"));
+
+
         int incorrectGuess;
         Random random;
         string selectedWord;

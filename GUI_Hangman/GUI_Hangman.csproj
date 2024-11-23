@@ -95,5 +95,8 @@
   <ItemGroup>
     <None Include="Resources\6.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\hangman_words.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
