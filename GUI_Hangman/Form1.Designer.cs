@@ -57,6 +57,7 @@
             this.btnGuess.TabIndex = 1;
             this.btnGuess.Text = "Guess";
             this.btnGuess.UseVisualStyleBackColor = false;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
             // tbGuess
             // 

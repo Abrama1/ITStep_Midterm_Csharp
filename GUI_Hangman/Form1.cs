@@ -43,5 +43,25 @@ namespace GUI_Hangman
             string formattedDisplayWord = string.Join(" ", displayWord);
             lblWordDisplay.Text = formattedDisplayWord;
         }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            char guess = tbGuess.Text.ToLower()[0];
+            bool correctGuess = false;
+            for (int i = 0; i < selectedWord.Length; i++)
+            {
+                if (selectedWord[i] == guess)
+                {
+                    displayWord[i] = guess;
+                    correctGuess = true;
+                }
+            }
+
+            lblWordDisplay.Text = string.Join(" ", displayWord);
+            if (!correctGuess)
+            {
+                UpdateHangmanImage();
+            }
+        }
     }
 }
