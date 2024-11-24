@@ -41,12 +41,12 @@
             this.cmbSourceLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.cmbSourceLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbSourceLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmbSourceLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSourceLanguage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSourceLanguage.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbSourceLanguage.FormattingEnabled = true;
             this.cmbSourceLanguage.Location = new System.Drawing.Point(85, 205);
             this.cmbSourceLanguage.Name = "cmbSourceLanguage";
-            this.cmbSourceLanguage.Size = new System.Drawing.Size(250, 24);
+            this.cmbSourceLanguage.Size = new System.Drawing.Size(250, 25);
             this.cmbSourceLanguage.TabIndex = 1;
             // 
             // cmbTargetLanguage
@@ -54,12 +54,12 @@
             this.cmbTargetLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.cmbTargetLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbTargetLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmbTargetLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTargetLanguage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTargetLanguage.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbTargetLanguage.FormattingEnabled = true;
             this.cmbTargetLanguage.Location = new System.Drawing.Point(500, 205);
             this.cmbTargetLanguage.Name = "cmbTargetLanguage";
-            this.cmbTargetLanguage.Size = new System.Drawing.Size(250, 24);
+            this.cmbTargetLanguage.Size = new System.Drawing.Size(250, 25);
             this.cmbTargetLanguage.TabIndex = 1;
             // 
             // btnTransate
@@ -68,7 +68,7 @@
             this.btnTransate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTransate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.btnTransate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransate.ForeColor = System.Drawing.SystemColors.Menu;
             this.btnTransate.Location = new System.Drawing.Point(369, 280);
             this.btnTransate.Name = "btnTransate";
@@ -96,7 +96,7 @@
             // 
             this.txtDisplay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.txtDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay1.ForeColor = System.Drawing.SystemColors.Menu;
             this.txtDisplay1.Location = new System.Drawing.Point(40, 60);
             this.txtDisplay1.Multiline = true;
@@ -109,7 +109,7 @@
             // 
             this.txtDisplay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.txtDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay2.ForeColor = System.Drawing.SystemColors.Menu;
             this.txtDisplay2.Location = new System.Drawing.Point(445, 60);
             this.txtDisplay2.Multiline = true;
