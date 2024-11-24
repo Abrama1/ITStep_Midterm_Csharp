@@ -86,7 +86,7 @@ namespace GUI_Translator
     public class TranslationResponse
     {
         [JsonProperty("responseStatus")]
-        public int responseStatus { get; set; }
+        public int ResponseStatus { get; set; }
 
         [JsonProperty("responseData")]
         public TranslationData ResponseData { get; set; }
