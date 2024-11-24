@@ -53,7 +53,12 @@ namespace GUI_Translator
             cmbTargetLanguage.SelectedIndex = 2;
         }
 
-        private async void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btnTransate_Click(object sender, EventArgs e)
         {
             try
             {
@@ -65,11 +70,6 @@ namespace GUI_Translator
                 MessageBox.Show("Translation failed. Please try again. Error: \r\n" + ex);
                 throw;
             }
-        }
-
-        private void btnTransate_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
