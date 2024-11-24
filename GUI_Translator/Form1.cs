@@ -47,8 +47,19 @@ namespace GUI_Translator
         {
             cmbSourceLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTargetLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbSourceLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de" });
-            cmbTargetLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de" });
+            cmbSourceLanguage.Items.AddRange(new string[]
+            {
+            "en", "es", "fr", "de", "ar", "zh", "ru", "it", "ja",
+            "ko", "hi", "pt", "nl", "pl", "sv", "tr", "el", "cs",
+            "he", "ro", "da", "fi", "no", "vi"
+            });
+            cmbTargetLanguage.Items.AddRange(new string[]
+            {
+            "en", "es", "fr", "de", "ar", "zh", "ru", "it", "ja",
+            "ko", "hi", "pt", "nl", "pl", "sv", "tr", "el", "cs",
+            "he", "ro", "da", "fi", "no", "vi"
+            });
+
             cmbSourceLanguage.SelectedIndex = 1;
             cmbTargetLanguage.SelectedIndex = 2;
         }
