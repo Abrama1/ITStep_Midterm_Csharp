@@ -35,7 +35,7 @@ namespace GUI_Translator
             string responseJson = await response.Content.ReadAsStringAsync();
             var translationResult = JsonConvert.DeserializeObject<TranslationResponse>(responseJson);
 
-            if (translationResult.Response == 200)
+            if (translationResult.ResponseStatus == 200)
             {
                 return translationResult.TranslatedText;
             }
@@ -53,9 +53,18 @@ namespace GUI_Translator
             cmbTargetLanguage.SelectedIndex = 2;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private async void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                string translatedText = await TranslateAsync(txtDisplay1.Text, cmbSourceLanguage.SelectedItem.ToString(), cmbTargetLanguage.SelectedItem.ToString());
+                txtDisplay2.Text = translatedText;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Translation failed. Please try again. Error: \r\n" + ex);
+                throw;
+            }
         }
 
         private void btnTransate_Click(object sender, EventArgs e)
