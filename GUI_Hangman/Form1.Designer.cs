@@ -89,7 +89,7 @@
             this.Controls.Add(this.btnGuess);
             this.Controls.Add(this.lblWordDisplay);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hangman";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
