@@ -20,7 +20,12 @@ namespace GUI_Translator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            cmbSourceLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbTargetLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbSourceLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de" });
+            cmbTargetLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de" });
+            cmbSourceLanguage.SelectedIndex = 1;
+            cmbTargetLanguage.SelectedIndex = 2;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -28,65 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDisplay1 = new System.Windows.Forms.TextBox();
-            this.txtDisplay2 = new System.Windows.Forms.TextBox();
-            this.cmbBoxList1 = new System.Windows.Forms.ComboBox();
-            this.cmbBoxList2 = new System.Windows.Forms.ComboBox();
+            this.cmbSourceLanguage = new System.Windows.Forms.ComboBox();
+            this.cmbTargetLanguage = new System.Windows.Forms.ComboBox();
             this.btnTransate = new System.Windows.Forms.Button();
             this.btnSwitch = new System.Windows.Forms.Button();
+            this.txtDisplay1 = new System.Windows.Forms.TextBox();
+            this.txtDisplay2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtDisplay1
+            // cmbSourceLanguage
             // 
-            this.txtDisplay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.txtDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtDisplay1.Location = new System.Drawing.Point(40, 60);
-            this.txtDisplay1.Multiline = true;
-            this.txtDisplay1.Name = "txtDisplay1";
-            this.txtDisplay1.Size = new System.Drawing.Size(350, 130);
-            this.txtDisplay1.TabIndex = 0;
-            this.txtDisplay1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.cmbSourceLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cmbSourceLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbSourceLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbSourceLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSourceLanguage.ForeColor = System.Drawing.SystemColors.Menu;
+            this.cmbSourceLanguage.FormattingEnabled = true;
+            this.cmbSourceLanguage.Location = new System.Drawing.Point(85, 205);
+            this.cmbSourceLanguage.Name = "cmbSourceLanguage";
+            this.cmbSourceLanguage.Size = new System.Drawing.Size(250, 24);
+            this.cmbSourceLanguage.TabIndex = 1;
             // 
-            // txtDisplay2
+            // cmbTargetLanguage
             // 
-            this.txtDisplay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.txtDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay2.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtDisplay2.Location = new System.Drawing.Point(445, 60);
-            this.txtDisplay2.Multiline = true;
-            this.txtDisplay2.Name = "txtDisplay2";
-            this.txtDisplay2.Size = new System.Drawing.Size(350, 130);
-            this.txtDisplay2.TabIndex = 0;
-            this.txtDisplay2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // cmbBoxList1
-            // 
-            this.cmbBoxList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.cmbBoxList1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmbBoxList1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbBoxList1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.cmbBoxList1.FormattingEnabled = true;
-            this.cmbBoxList1.Location = new System.Drawing.Point(85, 205);
-            this.cmbBoxList1.Name = "cmbBoxList1";
-            this.cmbBoxList1.Size = new System.Drawing.Size(250, 24);
-            this.cmbBoxList1.Sorted = true;
-            this.cmbBoxList1.TabIndex = 1;
-            // 
-            // cmbBoxList2
-            // 
-            this.cmbBoxList2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.cmbBoxList2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmbBoxList2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbBoxList2.ForeColor = System.Drawing.SystemColors.Menu;
-            this.cmbBoxList2.FormattingEnabled = true;
-            this.cmbBoxList2.Location = new System.Drawing.Point(500, 205);
-            this.cmbBoxList2.Name = "cmbBoxList2";
-            this.cmbBoxList2.Size = new System.Drawing.Size(250, 24);
-            this.cmbBoxList2.Sorted = true;
-            this.cmbBoxList2.TabIndex = 1;
+            this.cmbTargetLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cmbTargetLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbTargetLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbTargetLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTargetLanguage.ForeColor = System.Drawing.SystemColors.Menu;
+            this.cmbTargetLanguage.FormattingEnabled = true;
+            this.cmbTargetLanguage.Location = new System.Drawing.Point(500, 205);
+            this.cmbTargetLanguage.Name = "cmbTargetLanguage";
+            this.cmbTargetLanguage.Size = new System.Drawing.Size(250, 24);
+            this.cmbTargetLanguage.TabIndex = 1;
             // 
             // btnTransate
             // 
@@ -117,6 +91,33 @@
             this.btnSwitch.TabIndex = 3;
             this.btnSwitch.UseVisualStyleBackColor = true;
             // 
+            // txtDisplay1
+            // 
+            this.txtDisplay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.txtDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtDisplay1.Location = new System.Drawing.Point(40, 60);
+            this.txtDisplay1.Multiline = true;
+            this.txtDisplay1.Name = "txtDisplay1";
+            this.txtDisplay1.Size = new System.Drawing.Size(350, 130);
+            this.txtDisplay1.TabIndex = 0;
+            this.txtDisplay1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtDisplay2
+            // 
+            this.txtDisplay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.txtDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtDisplay2.Location = new System.Drawing.Point(445, 60);
+            this.txtDisplay2.Multiline = true;
+            this.txtDisplay2.Name = "txtDisplay2";
+            this.txtDisplay2.ReadOnly = true;
+            this.txtDisplay2.Size = new System.Drawing.Size(350, 130);
+            this.txtDisplay2.TabIndex = 0;
+            this.txtDisplay2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,8 +126,8 @@
             this.ClientSize = new System.Drawing.Size(834, 361);
             this.Controls.Add(this.btnSwitch);
             this.Controls.Add(this.btnTransate);
-            this.Controls.Add(this.cmbBoxList2);
-            this.Controls.Add(this.cmbBoxList1);
+            this.Controls.Add(this.cmbTargetLanguage);
+            this.Controls.Add(this.cmbSourceLanguage);
             this.Controls.Add(this.txtDisplay2);
             this.Controls.Add(this.txtDisplay1);
             this.Name = "Form1";
@@ -138,13 +139,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDisplay1;
-        private System.Windows.Forms.TextBox txtDisplay2;
-        private System.Windows.Forms.ComboBox cmbBoxList1;
-        private System.Windows.Forms.ComboBox cmbBoxList2;
+        private System.Windows.Forms.ComboBox cmbSourceLanguage;
+        private System.Windows.Forms.ComboBox cmbTargetLanguage;
         private System.Windows.Forms.Button btnTransate;
         private System.Windows.Forms.Button btnSwitch;
+        private System.Windows.Forms.TextBox txtDisplay1;
+        private System.Windows.Forms.TextBox txtDisplay2;
     }
 }
 
