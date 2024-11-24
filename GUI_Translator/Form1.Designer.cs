@@ -90,12 +90,13 @@
             this.btnSwitch.Size = new System.Drawing.Size(50, 24);
             this.btnSwitch.TabIndex = 3;
             this.btnSwitch.UseVisualStyleBackColor = true;
+            this.btnSwitch.Click += new System.EventHandler(this.btnSwitch_Click);
             // 
             // txtDisplay1
             // 
             this.txtDisplay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.txtDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay1.ForeColor = System.Drawing.SystemColors.Menu;
             this.txtDisplay1.Location = new System.Drawing.Point(40, 60);
             this.txtDisplay1.Multiline = true;
@@ -108,7 +109,7 @@
             // 
             this.txtDisplay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.txtDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDisplay2.ForeColor = System.Drawing.SystemColors.Menu;
             this.txtDisplay2.Location = new System.Drawing.Point(445, 60);
             this.txtDisplay2.Multiline = true;

@@ -77,9 +77,15 @@ namespace GUI_Translator
 
         }
 
-        private void btnShuffle_Click(object sender, EventArgs e)
+        private void btnSwitch_Click(object sender, EventArgs e)
         {
+            string tempText = txtDisplay1.Text;
+            txtDisplay1.Text = txtDisplay2.Text;
+            txtDisplay2.Text = tempText;
 
+            int tempIndex = cmbSourceLanguage.SelectedIndex;
+            cmbSourceLanguage.SelectedIndex = cmbTargetLanguage.SelectedIndex;
+            cmbTargetLanguage.SelectedIndex = tempIndex;
         }
     }
 
