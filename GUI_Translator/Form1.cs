@@ -17,7 +17,35 @@ namespace GUI_Translator
     {
         private const string baseUrl = "http://api.mymemory.translated.net";
         private HttpClient httpClient;
-        
+
+        private readonly Dictionary<string, string> languageMap = new Dictionary<string, string>
+        {
+            { "English", "en" },
+            { "Spanish", "es" },
+            { "French", "fr" },
+            { "German", "de" },
+            { "Arabic", "ar" },
+            { "Chinese", "zh" },
+            { "Russian", "ru" },
+            { "Italian", "it" },
+            { "Japanese", "ja" },
+            { "Korean", "ko" },
+            { "Hindi", "hi" },
+            { "Portuguese", "pt" },
+            { "Dutch", "nl" },
+            { "Polish", "pl" },
+            { "Swedish", "sv" },
+            { "Turkish", "tr" },
+            { "Greek", "el" },
+            { "Czech", "cs" },
+            { "Hebrew", "he" },
+            { "Romanian", "ro" },
+            { "Danish", "da" },
+            { "Finnish", "fi" },
+            { "Norwegian", "no" },
+            { "Vietnamese", "vi" }
+        };
+
 
         public Form1()
         {
@@ -47,21 +75,12 @@ namespace GUI_Translator
         {
             cmbSourceLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTargetLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbSourceLanguage.Items.AddRange(new string[]
-            {
-            "en", "es", "fr", "de", "ar", "zh", "ru", "it", "ja",
-            "ko", "hi", "pt", "nl", "pl", "sv", "tr", "el", "cs",
-            "he", "ro", "da", "fi", "no", "vi"
-            });
-            cmbTargetLanguage.Items.AddRange(new string[]
-            {
-            "en", "es", "fr", "de", "ar", "zh", "ru", "it", "ja",
-            "ko", "hi", "pt", "nl", "pl", "sv", "tr", "el", "cs",
-            "he", "ro", "da", "fi", "no", "vi"
-            });
 
-            cmbSourceLanguage.SelectedIndex = 1;
-            cmbTargetLanguage.SelectedIndex = 2;
+            cmbSourceLanguage.Items.AddRange(languageMap.Keys.ToArray());
+            cmbTargetLanguage.Items.AddRange(languageMap.Keys.ToArray());
+
+            cmbSourceLanguage.SelectedIndex = cmbSourceLanguage.Items.IndexOf("English");
+            cmbTargetLanguage.SelectedIndex = cmbTargetLanguage.Items.IndexOf("Spanish");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -73,13 +92,15 @@ namespace GUI_Translator
         {
             try
             {
-                string translatedText = await TranslateAsync(txtDisplay1.Text, cmbSourceLanguage.SelectedItem.ToString(), cmbTargetLanguage.SelectedItem.ToString());
+                string sourceLang = languageMap[cmbSourceLanguage.SelectedItem.ToString()];
+                string targetLang = languageMap[cmbTargetLanguage.SelectedItem.ToString()];
+
+                string translatedText = await TranslateAsync(txtDisplay1.Text, sourceLang, targetLang);
                 txtDisplay2.Text = translatedText;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Translation failed. Please try again. Error: \r\n" + ex);
-                throw;
+                MessageBox.Show("Translation failed. Please try again. Error: \r\n" + ex.Message);
             }
         }
 
