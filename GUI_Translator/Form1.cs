@@ -73,4 +73,21 @@ namespace GUI_Translator
 
         }
     }
+
+    public class TranslationResponse
+    {
+        [JsonProperty("responseStatus")]
+        public int responseStatus { get; set; }
+
+        [JsonProperty("responseData")]
+        public TranslationData ResponseData { get; set; }
+
+        public string TranslatedText => ResponseData?.TranslatedText;
+    }
+
+    public class TranslationData
+    {
+        [JsonProperty("translatedText")]
+        public string TranslatedText { get; set; }
+    }
 }
