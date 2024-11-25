@@ -55,6 +55,14 @@ namespace GUI_BookManagement
             {
                 MessageBox.Show("Please enter a valid year.");
             }
+            try
+            {
+                bookManager.SaveToFile(filePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnView_Click(object sender, EventArgs e)
@@ -75,18 +83,5 @@ namespace GUI_BookManagement
                 MessageBox.Show("No books found!");
             }
         }
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            try
-            {
-                bookManager.SaveToFile(filePath);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
     }
 }
