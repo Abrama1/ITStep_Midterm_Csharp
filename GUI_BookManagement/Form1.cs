@@ -21,7 +21,15 @@ namespace GUI_BookManagement
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                bookManager.LoadFromFile(filePath);
+                MessageBox.Show("Data loaded successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
