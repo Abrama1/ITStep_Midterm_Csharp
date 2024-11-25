@@ -13,7 +13,7 @@ namespace GUI_BookManagement
     public partial class Form1 : Form
     {
         private BookManager bookManager = new BookManager();
-        private string filePath = "books.json";
+        private string filePath = "../../Resources/books.json";
         public Form1()
         {
             InitializeComponent();
