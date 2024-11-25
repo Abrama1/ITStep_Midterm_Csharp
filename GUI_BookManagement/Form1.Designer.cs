@@ -115,6 +115,7 @@
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Add Book";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnView
             // 

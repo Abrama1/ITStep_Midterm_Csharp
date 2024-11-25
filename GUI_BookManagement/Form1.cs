@@ -31,5 +31,30 @@ namespace GUI_BookManagement
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string title = txtTitle.Text.Trim();
+            string author = txtAuthor.Text.Trim();
+            if (int.TryParse(txtYear.Text.Trim(), out int year) && year > 0)
+            {
+                if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(author))
+                {
+                    MessageBox.Show("Title and Author cannot be empty.");
+                    return;
+                }
+
+                Book newBook = new Book(title, author, year);
+                bookManager.AddBook(newBook);
+                MessageBox.Show("Book added successfully!");
+                txtTitle.Clear();
+                txtAuthor.Clear();
+                txtYear.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid year.");
+            }
+        }
     }
 }
