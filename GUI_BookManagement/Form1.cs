@@ -62,5 +62,18 @@ namespace GUI_BookManagement
             dgvBooks.DataSource = null;
             dgvBooks.DataSource = bookManager.GetAllBooks();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchTitle = txtSearch.Text.Trim();
+            var results = bookManager.SearchBooks(searchTitle);
+            dgvBooks.DataSource = null;
+            dgvBooks.DataSource = results;
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No books found!");
+            }
+        }
     }
 }
