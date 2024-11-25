@@ -56,5 +56,11 @@ namespace GUI_BookManagement
                 MessageBox.Show("Please enter a valid year.");
             }
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            dgvBooks.DataSource = null;
+            dgvBooks.DataSource = bookManager.GetAllBooks();
+        }
     }
 }

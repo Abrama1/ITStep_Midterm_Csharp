@@ -125,6 +125,7 @@
             this.btnView.TabIndex = 5;
             this.btnView.Text = "View Books";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnSearch
             // 
