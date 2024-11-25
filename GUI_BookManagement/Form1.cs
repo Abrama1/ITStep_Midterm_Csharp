@@ -74,7 +74,7 @@ namespace GUI_BookManagement
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchTitle = txtSearch.Text.Trim();
-            var results = bookManager.SearchBooks(searchTitle);
+            var results = bookManager.SearchBooks(searchTitle, searchTitle, searchTitle);
             dgvBooks.DataSource = null;
             dgvBooks.DataSource = results;
 

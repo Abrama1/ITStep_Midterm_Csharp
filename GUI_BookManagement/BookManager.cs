@@ -22,10 +22,14 @@ public class BookManager
         return books;
     }
 
-    public List<Book> SearchBooks(string title)
+    public List<Book> SearchBooks(string title, string author, string year)
     {
-            return books.FindAll(b => b.Title.ToLower().Contains(title.ToLower()));
-    }
+            return books.FindAll(b =>
+                b.Title.ToLower().Contains(title.ToLower()) ||
+                b.Author.ToLower().Contains(author.ToLower()) ||
+                b.PublicationYear.ToString().Contains(year)
+            );
+        }
 
     public void SaveToFile(string filePath)
     {
