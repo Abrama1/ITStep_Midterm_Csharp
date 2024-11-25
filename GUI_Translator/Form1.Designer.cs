@@ -40,10 +40,12 @@
             // 
             this.cmbSourceLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.cmbSourceLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbSourceLanguage.DropDownHeight = 90;
             this.cmbSourceLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbSourceLanguage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSourceLanguage.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbSourceLanguage.FormattingEnabled = true;
+            this.cmbSourceLanguage.IntegralHeight = false;
             this.cmbSourceLanguage.Location = new System.Drawing.Point(85, 205);
             this.cmbSourceLanguage.Name = "cmbSourceLanguage";
             this.cmbSourceLanguage.Size = new System.Drawing.Size(250, 25);
@@ -53,10 +55,12 @@
             // 
             this.cmbTargetLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.cmbTargetLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbTargetLanguage.DropDownHeight = 90;
             this.cmbTargetLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbTargetLanguage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTargetLanguage.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbTargetLanguage.FormattingEnabled = true;
+            this.cmbTargetLanguage.IntegralHeight = false;
             this.cmbTargetLanguage.Location = new System.Drawing.Point(500, 205);
             this.cmbTargetLanguage.Name = "cmbTargetLanguage";
             this.cmbTargetLanguage.Size = new System.Drawing.Size(250, 25);
