@@ -75,5 +75,18 @@ namespace GUI_BookManagement
                 MessageBox.Show("No books found!");
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                bookManager.SaveToFile(filePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
